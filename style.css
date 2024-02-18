@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fontTitle: "Anta", sans-serif;
+    --fontPruba: "Josefin Sans", sans-serif;
+}
+
+header {
+    background-color: #FFFFFF;
+
+    padding: 1rem 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    /* background-color: #21212154; */
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 5rem;
+    left: 4px;
+}
+
+header nav.active {
+    /* background-color: #111010; */
+    /* background-color: #F2F2F2; */
+    width: 13rem;
+    overflow: hidden;
+    padding-left: 1rem;
+    /* justify-content: start;
+    align-items: start; */
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+header nav ul li {
+
+    list-style: none;
+    padding: .8rem 0;
+    border-radius: 8px;
+}
+
+header nav ul li .bi-house-door-fill {
+    font-size: 1rem;
+    margin-bottom: .4rem;
+
+}
+
+header nav ul li:hover {
+    background-color: #F2F2F2;
+
+}
+
+
+
+header nav ul li.active {
+
+    margin-right: .2rem;
+    /* margin-left: .2rem; */
+    padding-left: .6rem;
+
+}
+
+
+
+header nav ul li:first-child.active {
+    background-color: #F2F2F2;
+
+}
+
+header nav ul li.active:hover {
+    background-color: #F2F2F2;
+}
+
+header nav ul li .ancla {
+    text-decoration: none;
+    font-family: var(--fontTitle);
+    color: #252525;
+    font-size: .6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li .ancla.active {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: .8rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+header nav ul li .img1 {
+    background-image: url(logoShorts.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1.2rem;
+    width: 1.2rem;
+
+    margin-bottom: .4rem;
+}
+
+header nav ul li .img2 {
+    background-image: url(logoSuscripciones.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1.2rem;
+    width: 1.2rem;
+
+    margin-bottom: .4rem;
+}
+
+header nav ul li .img3 {
+    background-image: url(logoTu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1.2rem;
+    width: 1.2rem;
+
+    margin-bottom: .4rem;
+}
+
+
+
+
+
+
+/* HAMBURGER */
+
+header .hamburguer {
+    width: 28px;
+    height: 28px;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+}
+
+header .hamburguer:hover {
+    background-color: #E5E5E5;
+    border-radius: 50%;
+
+}
+
+header .hamburguer div {
+    width: 16px;
+    height: 2px;
+    background-color: #ABABAB;
+}
+
+/* END HAMBURGER */
+
+/* TITULO HEADER */
+
+header .conteinerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .1rem;
+    margin-left: 1rem;
+}
+
+header .conteinerTitle .lg {
+    text-decoration: none;
+    font-family: var(--fontTitle);
+    font-size: 1.1rem;
+    color: #212121;
+    /* background-color: yellowgreen; */
+    position: relative;
+    font-weight: 500;
+}
+
+header .conteinerTitle .lg .spanLogo {
+    /* background-color: blue; */
+    position: absolute;
+    bottom: 1rem;
+    color: #8b8b8b;
+    font-size: .580rem;
+    font-weight: 400;
+}
+
+header .conteinerTitle a i {
+    color: #FF0000;
+    font-size: 1.699rem;
+    position: relative;
+    top: .1rem;
+}
+
+/* END TITULO HEADER */
