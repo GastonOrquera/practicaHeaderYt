@@ -27,16 +27,17 @@ header nav {
     position: absolute;
     top: 5rem;
     left: 4px;
-    overflow: auto;
+
 }
 
 header nav.active {
     /* background-color: #111010; */
     /* background-color: #F2F2F2; */
     width: 13rem;
-
+    overflow: auto;
     padding-left: 1rem;
-    height: 100%;
+    max-height: 26rem;
+
     /* justify-content: start;
     align-items: start; */
 }
@@ -46,14 +47,11 @@ header nav ul {
     flex-direction: column;
 }
 
-
-
-
 header nav ul li {
-
     list-style: none;
     padding: .8rem 0;
     border-radius: 8px;
+
 }
 
 header nav ul li .bi-house-door-fill {
@@ -76,8 +74,8 @@ header nav ul li:hover {
     display: block;
     border-color: #e5e5e54f;
     position: absolute;
-    top: 30%;
-    width: 86%;
+    top: 33%;
+    width: 88%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -89,7 +87,7 @@ header nav ul li:hover {
 
 header nav ul li.active {
 
-    margin-right: .2rem;
+    margin-right: 1rem;
     /* margin-left: .2rem; */
     padding-left: .6rem;
 
@@ -119,11 +117,11 @@ header nav ul li:first-child.active {
 
 header nav ul li:last-child.active {
 
-    margin-top: 1.9rem;
+    /* margin-top: 1.9rem; */
     background-image: none;
 }
 
-header nav ul li.active:hover {
+header nav ul li:hover.active {
     background-color: #F2F2F2;
 }
 
@@ -147,7 +145,43 @@ header nav ul li .ancla.active {
     width: 100%;
 }
 
+header nav ul li .noneJs {
+    text-decoration: none;
+    font-family: var(--fontTitle);
+    color: #252525;
+    font-size: .6rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+header nav ul li .noneJs.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: .8rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+header nav ul li .noneJs.active {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: .8rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+header nav ul .liHov {
+    display: none;
+}
+
+.liHov.active {
+    display: block;
+}
 
 
 header nav ul li .img1 {
@@ -179,6 +213,47 @@ header nav ul li .img3 {
 
     margin-bottom: .4rem;
 }
+
+header nav ul li .img4 {
+    background-image: url(logoTuCanal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1.2rem;
+    width: 1.2rem;
+
+    margin-bottom: .4rem;
+}
+
+header nav ul li .img5 {
+    background-image: url(logoHistorial.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1.2rem;
+    width: 1.2rem;
+
+    margin-bottom: .4rem;
+}
+
+header nav ul li .img6 {
+    background-image: url(logoMisVideos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1.2rem;
+    width: 1.2rem;
+
+    margin-bottom: .4rem;
+}
+
+header nav ul li .img7 {
+    background-image: url(logoVerMasTarde.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1.2rem;
+    width: 1.2rem;
+
+    margin-bottom: .4rem;
+}
+
 
 
 

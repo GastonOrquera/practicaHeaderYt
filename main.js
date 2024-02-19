@@ -8,7 +8,11 @@ let ul = document.querySelector('ul');
 
 let li = document.querySelectorAll('li');
 
+let liHov = document.querySelectorAll('.lihov');
+
 let ancla = document.querySelectorAll('.ancla');
+
+let anclas = document.querySelectorAll('.noneJs');
 
 let arrowRight = document.querySelector('.bi-chevron-right');
 
@@ -24,6 +28,10 @@ hamburger.addEventListener('click', function () {
 
     arrowRight.classList.toggle('active');
 
+    liHov.forEach(function (liHovs) {
+        liHovs.classList.toggle('active');
+    });
+
     li.forEach(function (lis) {
         lis.classList.toggle('active');
     });
@@ -31,6 +39,11 @@ hamburger.addEventListener('click', function () {
     ancla.forEach(function (anclas) {
         anclas.classList.toggle('active');
     });
+
+    anclas.forEach(function (anclass) {
+        anclass.classList.toggle('active');
+    });
+
     navLinks.forEach(function (links) {
         links.addEventListener('click', function () {
             nav.classList.remove('active');
@@ -42,10 +55,14 @@ hamburger.addEventListener('click', function () {
                 anclas.classList.remove('active');
             });
 
+            anclas.forEach(function (anclass) {
+                anclass.classList.remove('active');
+            });
         });
     });
 
-
-
-
 });
+
+
+
+
